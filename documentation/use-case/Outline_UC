@@ -4,15 +4,20 @@ Rent bike:
 	- Basic flow:
 	1. The user uses the camera to scan the barcode on the lock.
 	2. The software scans and decodes the barcode on the lock.
-	3. The software gets the information of the bike.
+	3. Call the UC "View Bike Info"
 	3. The software displays the information of the bike to the user.
 	4.  Call the UC "Deposit rent".
 	5. The software sends unlock signal to the lock.
 	6. The software starts time recording.
 
 	- Alternative flows:
-	A1. At step 2, the barcode is unrecognized. The software should notify to the user and ask the user to try again.
+	A1. At step 2, the barcode is unrecognized. The software should notify to the user and ask the user to try again. The use case then resume at step 2.
 
+View Bike Info:
+	- Basic flow: 
+	1. The sofware gets the infomation of the bike specified
+	2. The software displays the information of the bike to the user
+	- Alternative flow: None
 
 Deposit rent:
 	- Basic flow:
@@ -23,7 +28,7 @@ Deposit rent:
 	6. The software saves the transaction.
 
 	- Alternative flows:
-	A1. At step 5, the transaction fails. The software should notify the user of the failure.
+	A1. At step 5, the transaction fails. The software should notify the user of the failure. The use case then resume at step 6.
 
 
 Search dock:
