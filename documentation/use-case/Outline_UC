@@ -53,10 +53,10 @@ View dock:
 	A1. If the database doesn't have information about the dock selected, the software will notify that there's no information about that dock. The use case then resume at step 1.
 
 
-Payrent
+Pay rent
 	- Basic flow:
 	1. Software calculates rental fee.
-	2. Software asks interbank to add money to the bank balance.
+	2. Software asks interbank to subtract money from the bank balance.
 	3. Interbank proceeds the transaction.
 	4. Software saves the transaction.
 
