@@ -1,0 +1,70 @@
+Outline for main use cases:
+
+Rent bike:
+	- Basic flow:
+	1. The user uses the camera to scan the barcode on the lock.
+	2. The software scans and decodes the barcode on the lock.
+	3. The software gets the information of the bike.
+	3. The software displays the information of the bike to the user.
+	4.  Call the UC "Deposit rent".
+	5. The software sends unlock signal to the lock.
+	6. The software starts time recording.
+
+	- Alternative flows:
+	A1. At step 2, the barcode is unrecognized. The software should notify to the user and ask the user to try again.
+
+
+Deposit rent:
+	- Basic flow:
+	1. The software calculates the deposit fee and asks the user to choose a payment method.
+	2. The user chooses a payment method and confirms to make deposit.
+	4. The software connects to the Interbank and asks to deduct the deposit amount.
+	5. The Interbank proceeds the transaction.
+	6. The software saves the transaction.
+
+	- Alternative flows:
+	A1. At step 5, the transaction fails. The software should notify the user of the failure.
+
+
+Search dock:
+	- Basic flow:
+	1. Customer enters the name/ address of dock into search box.
+	2. Software validates entered name/ address.
+	3. Software queries database to get the information about the searched dock.
+	4. Software shows the searched dock’s detailed information.
+
+	- Alternative flows:
+	A1. At step 3, if the customer enters an invalid name/ address, the software notifies the user that the name/ address is invalid. The use case then resume at step 1.
+	A2. At step 4, if the customer enters a name/ address that does not exist, the software notifies the user that the name/ address does not exist. The use case then resume at step 1.
+
+
+View dock:
+	- Basic flow:
+	1. Customer selects a dock from the list provided by the software.
+	2. Software gets the dock’s detailed information from database.
+	3. Software shows detailed information of the selected dock.
+
+	- Alternative flows: 
+	A1. If the database doesn't have information about the dock selected, the software will notify that there's no information about that dock. The use case then resume at step 1.
+
+
+Payrent
+	- Basic flow:
+	1. Software calculates rental fee.
+	2. Software asks interbank to add money to the bank balance.
+	3. Interbank proceeds the transaction.
+	4. Software saves the transaction.
+
+	- Alternative flow:
+	A1. At step 1, if the rental fee is greater than the deposit money, the software asks interbank to deduct money from the bank balance. The use case then resume at step 3.
+	A2. At step 3, if the response time is greater then one second, or the transaction fails, the software notifies customer that transaction fails. The use case then ends.
+
+
+Return bike:
+	- Basic flow:
+	1. Customer returns the bike to an empty docking point.
+	2. Customer closes the lock.
+	3. Locker scans the code of the bike.
+	4. Locker sends signals to the software.
+	5. Software call use case payrent
+	6. Software displays success notification.
