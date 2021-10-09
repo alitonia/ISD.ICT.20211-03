@@ -12,8 +12,8 @@
 ## Contributions
   - Task 1: All members discuss & construct the UC Diagram (each 33.3%)
   - Task 2.1: Trinh Thu Hai
-  - Task 2.2 & 2.3: Nguyen Huy Hoang
-  - Task 2.4: Bui Thanh Tung
+  - Task 2.2 & 2.3: Bui Thanh Tung
+  - Task 2.4: Nguyen Huy Hoang
 ## Reviewers
   - Task 1 : All members
   - Task 2.1: Nguyen Huy Hoang & Bui Thanh Tung
