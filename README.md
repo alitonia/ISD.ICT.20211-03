@@ -1,19 +1,15 @@
 
 ---
 
-# LAB 03 - Interaction Diagram
+# LAB 05 - Interface design
 ## Tasks
-1. Complete interaction diagram
-    1.1. UC Rent bike
-    1.2. UC View dock
-    1.3. UC Return bike
+* Design graphical user interface: Screen configuration standardizations, mockup designs, screen transition diagrams, detailed screen specifications.
+* Interface design with another system/device: Using subsystem.
+
 ## Contributions
-  - Task 1: All members discuss & construct the Interaction Diagram (each 33.3%)
-  - Task 2.1: Trinh Thu Hai
-  - Task 2.2 & 2.3: Bui Thanh Tung
-  - Task 2.4: Nguyen Huy Hoang
+* Bui Thanh Tung: Screen configuration standardizations, mockup designs.
+* Trinh Thu Hai: screen transition diagrams, design subsystem.
+* Nguyen Huy Hoang: detailed screen specifications.
+
 ## Reviewers
-  - Task 1 : All members
-  - Task 2.1: Nguyen Huy Hoang & Bui Thanh Tung
-  - Task 2.2 & 2.3: Trinh Thu Hai & Nguyen Huy Hoang
-  - Task 2.4: Trinh Thu Hai & Bui Thanh Tung
+  * All members reviewed the 2 tasks
