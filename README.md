@@ -1,7 +1,7 @@
 
 ---
 
-# LAB 01 - ACTIVITY DIAGRAM
+# LAB 02 - ACTIVITY DIAGRAM
 ## Tasks
 1. Draw activity diagram for
     2.1. UC Rent bike and extracted UCs (View Bike Info & Deposit Rent)  
