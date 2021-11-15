@@ -1,6 +1,21 @@
 
 ---
 
+# LAB 06 - Class Design
+## Tasks
+* Complete design classes & design specification documents
+
+## Contributions
+* Bui Thanh Tung: Bike (StandardBike, StandardEBike, TwinBike), Station, StationList, Search StationController, ViewStationListController, ViewStationInfoController, ViewStationListScreen, ViewStationInfoScreen, ViewBikeInfoScreen
+* Trinh Thu Hai: RentBikeController, InterbankInterface, InterbankSubSystem, InterbankSubsystemController, InterbankBoundary, util package, BaseController, BaseScreenHandler, CreditCard
+* Nguyen Huy Hoang: ReturnBikeController, PayRentController, Rental, Invoice, PaymentTransaction, ViewRentScreen, PaymentScreen, InvoiceScreen
+
+## Reviewers
+  * All members reviewed the tasks
+
+---
+---
+
 # LAB 04 - Analysis Class Diagram
 ## Tasks
 * Complete analysis class diagrams for use case View station list, View station information and View Bike Information
