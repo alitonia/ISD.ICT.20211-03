@@ -1,4 +1,22 @@
+---
 
+# LAB 07 - Data modeling
+## Tasks
+* ER Diagram
+* Database design
+* Detailed design of database components
+* SDD
+
+## Contributions
+* ER Diagram, Database design, SDD: All memebers
+* Bui Thanh Tung: Bike , Station
+* Trinh Thu Hai: Creditcard, PaymentTransaction, Invoice
+* Nguyen Huy Hoang: AppUser, Rental
+
+## Reviewers
+  * All members reviewed the tasks
+
+---
 ---
 
 # LAB 06 - Class Design
