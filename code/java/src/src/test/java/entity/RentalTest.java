@@ -1,6 +1,6 @@
-package java.entity;
+package entity;
 
-import entity.Rental;
+import entity.rental.Rental;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
