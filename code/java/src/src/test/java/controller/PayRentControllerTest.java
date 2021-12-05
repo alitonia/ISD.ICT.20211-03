@@ -63,6 +63,7 @@ class PayRentControllerTest {
                     "1/25, false",
                     "112025, false",
                     "1325, false",
+                    "1301, false",
                     ", false",
             })
     void validateExpirationDate(String expirationDate, boolean expected) {
