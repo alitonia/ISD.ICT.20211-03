@@ -1,4 +1,4 @@
 package controller;
 
-public class ViewStationInfoController extends BaseController{
+public class ViewStationInfoController extends BaseController {
 }
