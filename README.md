@@ -26,7 +26,6 @@
   - RentalTest
 
 ---
----
 
 # LAB 07 - Data modeling
 ## Tasks
@@ -45,7 +44,6 @@
   * All members reviewed the tasks
 
 ---
----
 
 # LAB 06 - Class Design
 ## Tasks
@@ -59,7 +57,6 @@
 ## Reviewers
   * All members reviewed the tasks
 
----
 ---
 
 # LAB 04 - Analysis Class Diagram
