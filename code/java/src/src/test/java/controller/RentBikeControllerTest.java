@@ -1,5 +1,6 @@
 package controller;
 
+import controller.RentBikeController;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -16,7 +17,11 @@ class RentBikeControllerTest {
 
     @ParameterizedTest
     @CsvSource({
-            "123, false"
+            "123456, true",
+            "abc123, false",
+            "123, false",
+            "1234567, false",
+            ", false",
     })
     void validateBikeBarCode(String barcode, boolean expected) {
         boolean isValid = rentBikeController.validateBikeBarCode(barcode);
