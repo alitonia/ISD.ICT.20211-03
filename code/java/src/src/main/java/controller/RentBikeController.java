@@ -1,13 +1,12 @@
 package controller;
 
-import java.util.Objects;
 
-public class RentBikeController extends BaseController{
-    boolean validateBikeBarCode(String barcode){
+public class RentBikeController extends BaseController {
+    boolean validateBikeBarCode(String barcode) {
         if (barcode == null) {
             return false;
         }
-        if(barcode.length()!=6){
+        if (barcode.length() != 6) {
             return false;
         }
         try {
