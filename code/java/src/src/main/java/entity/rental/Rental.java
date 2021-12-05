@@ -34,7 +34,7 @@ public class Rental {
 
     public long calculateRefund(String startTimeString, String endTimeString, long paidAmount) {
         long rent = calculateRent(startTimeString, endTimeString);
-        if (rent > paidAmount) {
+        if (paidAmount > rent) {
             return paidAmount - rent;
         } else {
             return 0;
