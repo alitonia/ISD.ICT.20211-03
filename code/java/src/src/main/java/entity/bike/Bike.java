@@ -1,44 +1,64 @@
 package entity.bike;
 
 public class Bike {
-    private String bikeCode;
-    private String licensePlateNumber;
-    private boolean available = true;
-    private int stationId;
 
-    public Bike() {
+  protected String bikeCode;
+  protected String licensePlateNumber;
+  protected boolean available = true;
+  protected int stationId;
+  protected int saddle;
+  protected int pedal;
+  protected int rearSeat;
 
-    }
+  public Bike() {
 
-    public Bike(String bikeCode, String licensePlateNumber, boolean available, int stationId) {
-        this.bikeCode = bikeCode;
-        this.licensePlateNumber = licensePlateNumber;
-        this.available = available;
-        this.stationId = stationId;
-    }
+  }
+
+  public Bike(String bikeCode, String licensePlateNumber, boolean available, int stationId) {
+    this.bikeCode = bikeCode;
+    this.licensePlateNumber = licensePlateNumber;
+    this.available = available;
+    this.stationId = stationId;
+  }
 
 
-    public String getBikeCode() {
-        return bikeCode;
-    }
+  public String getBikeCode() {
+    return bikeCode;
+  }
 
-    public String getLicensePlateNumber() {
-        return licensePlateNumber;
-    }
+  public String getLicensePlateNumber() {
+    return licensePlateNumber;
+  }
 
-    public boolean isAvailable() {
-        return available;
-    }
+  public boolean isAvailable() {
+    return available;
+  }
 
-    public int getStationId() {
-        return stationId;
-    }
+  public int getStationId() {
+    return stationId;
+  }
 
-    public void setAvailable(boolean available) {
-        this.available = available;
-    }
+  public void setAvailable(boolean available) {
+    this.available = available;
+  }
 
-    public void setStationId(int stationId) {
-        this.stationId = stationId;
-    }
+  public void setStationId(int stationId) {
+    this.stationId = stationId;
+  }
+
+  public int getSaddle() {
+    return saddle;
+  }
+
+  public int getPedal() {
+    return pedal;
+  }
+
+  public int getRearSeat() {
+    return rearSeat;
+  }
+
+  public String getBikeType() {
+    return null;
+  }
 }
