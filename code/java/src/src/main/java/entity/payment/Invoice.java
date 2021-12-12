@@ -1,6 +1,6 @@
 package entity.payment;
 
-import entity.Rental;
+import entity.rental.Rental;
 
 public class Invoice {
     private Rental rental;
