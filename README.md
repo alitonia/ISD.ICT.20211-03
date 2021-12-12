@@ -1,3 +1,30 @@
+
+---
+
+# LAB 08 - Unit Testing
+## Tasks
+* Apply TDD for the EcoBikeRental Project
+* Document the unit test design with the Test plan
+
+## Contributions
+* Bui Thanh Tung: 
+  - SearchStationControllerTest
+  - StationTest
+* Trinh Thu Hai: 
+  - RentBikeControllerTest
+  - PayRentControllerTest
+* Nguyen Huy Hoang: 
+  - RentalTest
+
+## Reviewers
+* Nguyen Huy Hoang: 
+  - RentBikeControllerTest
+  - PayRentControllerTest
+* Trinh Thu Hai: 
+  - SearchStationControllerTest
+  - StationTest
+  - RentalTest
+
 ---
 
 # LAB 07 - Data modeling
@@ -17,7 +44,6 @@
   * All members reviewed the tasks
 
 ---
----
 
 # LAB 06 - Class Design
 ## Tasks
@@ -31,7 +57,6 @@
 ## Reviewers
   * All members reviewed the tasks
 
----
 ---
 
 # LAB 04 - Analysis Class Diagram

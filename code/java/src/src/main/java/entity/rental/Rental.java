@@ -1,4 +1,4 @@
-package entity;
+package entity.rental;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
