@@ -107,4 +107,13 @@ public class Station {
     public int getCapacity() {
         return capacity;
     }
+
+    public void updateCapacity() {
+
+    }
+
+    public boolean hasAvailableLock() {
+
+        return false;
+    }
 }

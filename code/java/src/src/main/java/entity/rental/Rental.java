@@ -7,6 +7,14 @@ import java.lang.*;
 
 public class Rental {
 
+    private String startTime;
+    private String finishTime;
+    private int status;
+    private float currentDeposit;
+    private float currentCost;
+    private int pauseDuration;
+
+
     private long FULL_DAY_PRICE = 200000;
     private long FULL_DAY = 12;
     private long HOUR_EARLY_REFUND = 10000;
@@ -41,7 +49,12 @@ public class Rental {
         }
     }
 
-    public long hello(String x) {
-        return 1;
+    public void finish() {
+
+    }
+
+    public float calculateRentalCost() {
+
+        return 0;
     }
 }
