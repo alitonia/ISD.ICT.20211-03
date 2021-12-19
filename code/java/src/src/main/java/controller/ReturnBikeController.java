@@ -1,7 +1,7 @@
 package controller;
 
 import controller.BaseController;
-import entity.Rental;
+import entity.rental.Rental;
 
 public class ReturnBikeController extends BaseController {
 
