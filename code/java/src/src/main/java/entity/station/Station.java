@@ -108,7 +108,7 @@ public class Station {
         return capacity;
     }
 
-    public void updateCapacity() {
+    public void updateCapacity(boolean direction) {
 
     }
 
