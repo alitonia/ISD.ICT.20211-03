@@ -1,6 +1,20 @@
 
 ---
 
+# LAB 09 - Programming
+## Tasks
+* Implement partially the design for EcoBike using TDD
+* Export Javadocs
+
+## Contributions
+* Bui Thanh Tung: View Bike Info
+* Trinh Thu Hai: Rent Bike
+* Nguyen Huy Hoang: Return Bike
+
+## Reviewers
+
+---
+
 # LAB 08 - Unit Testing
 ## Tasks
 * Apply TDD for the EcoBikeRental Project
