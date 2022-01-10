@@ -34,6 +34,8 @@ public class InterbankSubsystemController {
 	 * @return {@link PaymentTransaction paymentTransaction}
 	 */
 	public PaymentTransaction refund(CreditCard card, int amount, String contents) {
+		System.out.println("HEllo");
+		System.out.println(card);
 		String payload = INTERBANK_DATA_CONVERTER.convertToPayload(card, amount, contents, InterbankConfigs.REFUND_COMMAND);
 		LOGGER.info(payload);
 		String responseText = INTERBANK_BOUNDARY.query(InterbankConfigs.PROCESS_TRANSACTION_URL, payload);
@@ -53,9 +55,12 @@ public class InterbankSubsystemController {
 	 * @throws PaymentException
 	 */
 	public PaymentTransaction pay(CreditCard card, int amount, String contents) throws UnrecognizedException, PaymentException {
+		System.out.println("Helloxxx");
 		String payload = INTERBANK_DATA_CONVERTER.convertToPayload(card, amount, contents, InterbankConfigs.PAY_COMMAND);
+		System.out.println(payload);
 		LOGGER.info(payload);
 		String responseText = INTERBANK_BOUNDARY.query(InterbankConfigs.PROCESS_TRANSACTION_URL, payload);
+		System.out.println(responseText);
 		LOGGER.info(responseText);
 
 		return INTERBANK_DATA_CONVERTER.convertResponse(responseText);
