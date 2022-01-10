@@ -1,15 +1,17 @@
 # Installation guides
 
-*Without maven:
+### Requirement
+
+* maven
+* docker-compose 3
+* java < 12 on JAVA_PATH
+
+### Install
 
 * Run `docker-compose up`
 * Install project's artifact with Maven
 * Run application from file src/main/java/com/isd/ict/capstoneproject/HelloApplication.java
-
-
-* With maven:
-    * `Run docker-compose up`
-    * `mvn clean javafx:run`
+* Run project `mvn clean javafx:run`
 
 # Link
 
