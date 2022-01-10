@@ -75,6 +75,7 @@ public class StationDetailBikeItemHandler extends FXMLScreenHandler implements S
         lbBikeLicensePlate.setText(bike.getLicensePlateNumber());
         lbBikeBatteryPercentage.setText(String.valueOf(bike.getBatteryPercentage() != null ? bike.getBatteryPercentage() : ""));
         lbBikeBarcode.setText(bike.getBarcode());
+
         File file = new File(ViewsConfigs.IMAGE_PATH + bike.getType().getBikeTypeImageURL());
         Image image = new Image(file.toURI().toString());
         ivBikeTypeImage.setImage(image);

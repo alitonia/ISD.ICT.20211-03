@@ -99,33 +99,13 @@ public class HomeScreenHandler extends BaseScreenHandler implements ScreenElemen
         this.viewRentalController = ViewRentalController.getInstance();
         this.homeStationList = new ArrayList<>();
 
-        System.out.println("-x11-");
-        System.out.println(ViewsConfigs.SPLASH_SCREEN_PATH);
-        System.out.println(this.getClass().getResource("views/fxml/splash.fxml"));
-
-        System.out.println(this.getClass().getModule());
-        System.out.println(this.getClass().getModule().isNamed());
-        System.out.println(this.getClass().getModule().getName());
-
+        //manual inspection into resolveName and getResource
         ClassLoader cl = this.getClass().getClassLoader();
         if (cl == null){
-            System.out.println("123");
+        //pass
         }else {
-            System.out.println("OKEE");
-            System.out.println("views/fxml/splash.fxml");
-            System.out.println(this.getClass().getModule().getName());
-            System.out.println(this.getClass().getClassLoader().getResource("views/fxml/splash.fxml"));
-            System.out.println(this.getClass().getClassLoader().getResource("/resources/com/isd/ict/capstoneproject/views/css/home-station-item.css"));
-
+        //pass
         }
-
-
-        System.out.println(this.getClass().getName());
-        System.out.println(this.getClass().getSimpleName());
-        System.out.println(this.getClass().getCanonicalName());
-        System.out.println(this.getClass().getPackageName());
-
-        System.out.println("-y-");
 
         List<DockStation> list = viewDockController.getAllDockList();
         for (DockStation dockStation : list) {
@@ -215,6 +195,5 @@ public class HomeScreenHandler extends BaseScreenHandler implements ScreenElemen
     @FXML
     public void goHome(MouseEvent event) throws IOException {
         LOGGER.info("Go Home");
-        System.out.println("Go home");
     }
 }

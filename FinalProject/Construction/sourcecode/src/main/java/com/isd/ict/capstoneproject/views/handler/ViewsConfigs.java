@@ -2,7 +2,7 @@ package com.isd.ict.capstoneproject.views.handler;
 
 /**
  * The {@link ViewsConfigs viewsConfigs} This class provides configurations for project
- *
+ * Use relative path as all assets will be loaded in main
  *
  */
 public class ViewsConfigs {
@@ -18,7 +18,6 @@ public class ViewsConfigs {
     public static String RETURN_BIKE_DOCK_LIST_PATH = "views/fxml/return-bike-station-list.fxml";
     public static String RESULT_SCREEN_PATH = "views/fxml/result.fxml";
     public static String POPUP_PATH = "views/fxml/popup.fxml";
-    // repetitive element on screen
     public static String HOME_STATION_ITEM = "views/fxml/home-station-item.fxml";
     public static String RETURN_BIKE_STATION_ITEM = "views/fxml/return-bike-station-item.fxml";
     public static String STATION_DETAIL_BIKE_ITEM = "views/fxml/station-detail-bike-item.fxml";

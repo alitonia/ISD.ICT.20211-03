@@ -102,7 +102,7 @@ public class ReturnBikeController {
             int rentalId = rental.getRentId();
             int amount = rentalService.calculateDeposit(rental) - rentalService.calculateCost(rental);
             String content = "rental_refund_" + rentalId;
-            System.out.println("Refunding here");
+            //Refunding here
 
             refundTransaction = paymentService.refundRent(amount, content, paymentService.getCreditCardToRefund(rentalId));
         } catch (DataSourceException ex) {

@@ -30,15 +30,6 @@ public class FXMLScreenHandler {
     }
 
     public FXMLScreenHandler(String screenPath) throws IOException {
-        System.out.println("Molata");
-
-        System.out.println(screenPath);
-        System.out.println(FXMLScreenHandler.class.getResource(screenPath) != null ? getClass().getResource(screenPath) : 0);
-
-        System.out.println(getClass().getResource(screenPath) != null ? getClass().getResource(screenPath) : 0);
-        System.out.println(this.getClass().getResource(screenPath) != null ? getClass().getResource(screenPath) : 0);
-        System.out.println(FXMLScreenHandler.class.getResource(screenPath) != null ? getClass().getResource(screenPath) : 0);
-
 
         this.loader = new FXMLLoader(Objects.requireNonNull(Utils.getFXML(screenPath)));
         // Set this class as the controller
@@ -47,17 +38,7 @@ public class FXMLScreenHandler {
     }
 
     public FXMLScreenHandler(URL screenURL) throws IOException {
-        System.out.println("Polle");
-
-        System.out.println("-x-");
-        System.out.println(ViewsConfigs.SPLASH_SCREEN_PATH);
-        System.out.println(this.getClass().getResource(ViewsConfigs.SPLASH_SCREEN_PATH));
-        System.out.println(this.getClass().getClassLoader().getResource(ViewsConfigs.SPLASH_SCREEN_PATH));
-        System.out.println("-y-");
-
-        System.out.println(screenURL != null ? screenURL.getPath() : 0);
-        System.out.println(screenURL != null ? screenURL.toString() : 0);
-        System.out.println(screenURL != null ? screenURL.toExternalForm() : 0);
+    // do not load assets in here. Very buggy in modular form
         this.loader = new FXMLLoader(screenURL);
         // Set this class as the controller
         this.loader.setController(this);

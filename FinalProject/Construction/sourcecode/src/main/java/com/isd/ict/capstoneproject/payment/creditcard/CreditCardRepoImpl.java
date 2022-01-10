@@ -24,21 +24,17 @@ public class CreditCardRepoImpl implements CreditCardRepo, ResultSetMappable<Cre
     public CreditCard getById(String id) throws DataSourceException {
         try {
             String sql = "select * from CreditCard where cardCode = '" + id + "'";
-            System.out.println("Get it");
-            System.out.println(sql);
+
 
             ResultSet res = DATA_SOURCE.getConnection().createStatement().executeQuery(sql);
-            System.out.println("Get it1");
-            System.out.println(res);
 
             if (res.next()) {
                 return mapFromResultSet(res);
             }
-            System.out.println("Not Get it2");
+
             return null;
 //            throw new NotFoundException();
         } catch (SQLException ex) {
-            System.out.println("F it");
 
             throw new DataSourceException(ex);
         }
@@ -77,8 +73,6 @@ public class CreditCardRepoImpl implements CreditCardRepo, ResultSetMappable<Cre
     @Override
     public CreditCard update(CreditCard card) throws DataSourceException {
         try {
-            System.out.println("Potential faulty impl");
-            System.out.println(card.getDateExpired());
 
             var fourDigitsDate = card.getDateExpired();
 
@@ -88,9 +82,6 @@ public class CreditCardRepoImpl implements CreditCardRepo, ResultSetMappable<Cre
                     "cvvCode = " + "'" + card.getCvvCode() + "'" + " " +
                     "where cardCode = " + "'" + card.getCardCode() + "'";
 
-            System.out.println("Update");
-            System.out.println();
-            System.out.println(sql);
 
             int noOfChanged = DATA_SOURCE.getConnection().createStatement().executeUpdate(sql);
             if (noOfChanged == 0)
@@ -110,12 +101,6 @@ public class CreditCardRepoImpl implements CreditCardRepo, ResultSetMappable<Cre
      */
     @Override
     public CreditCard mapFromResultSet(ResultSet res) throws SQLException {
-        System.out.println("Hello in credit reader");
-
-        System.out.println(res.getString("dateExpired"));
-        System.out.println(res);
-        System.out.println(res);
-
 
 
         CreditCard card = CreditCard.builder()
@@ -125,7 +110,6 @@ public class CreditCardRepoImpl implements CreditCardRepo, ResultSetMappable<Cre
                 .cvvCode(Integer.parseInt(res.getString("cvvCode")))
                 .build();
 
-        System.out.println(card);
 
         return card;
     }

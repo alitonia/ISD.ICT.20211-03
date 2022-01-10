@@ -41,10 +41,8 @@ public class PopupScreenHandler extends BaseScreenHandler {
      * @throws IOException
      */
     private static PopupScreenHandler popup(String message, String imagePath, Boolean undecorated) throws IOException{
-        System.out.println("absss");
-        System.out.println(PopupScreenHandler.class.getResource("/views/fxml/popup.fxml"));
-
-        System.out.println(PopupScreenHandler.class.getResource(ViewsConfigs.POPUP_PATH));
+        // for some reason you can load assets in here.
+        // But to be systematic, please load assets in main
         PopupScreenHandler popup = new PopupScreenHandler(new Stage());
         if (undecorated) popup.stage.initStyle(StageStyle.UNDECORATED);
         popup.message.setText(message);

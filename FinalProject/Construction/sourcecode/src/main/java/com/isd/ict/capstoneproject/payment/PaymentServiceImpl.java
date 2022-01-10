@@ -95,7 +95,6 @@ public class PaymentServiceImpl implements PaymentService {
 
     @Override
     public CreditCard getCreditCardToRefund(int rentalId) throws DataSourceException {
-        System.out.println("Searching card here");
 
         Invoice depositInvoice = invoiceRepo.getDepositInvoiceByRentalId(rentalId);
         CreditCard card = paymentTransactionRepo
@@ -124,11 +123,8 @@ public class PaymentServiceImpl implements PaymentService {
 
     @Override
     public void insertInvoice(PaymentTransaction transaction, Rental rental, int invoiceType) throws DataSourceException {
-        System.out.println("Here");
-        System.out.println(transaction);
 
         paymentTransactionRepo.insert(transaction);
-        System.out.println("THere");
 
         // save invoice
         Invoice invoiceDao = Invoice.builder()
@@ -137,10 +133,6 @@ public class PaymentServiceImpl implements PaymentService {
                 .amount(transaction.getAmount())
                 .type(invoiceType)
                 .build();
-
-        System.out.println(invoiceDao);
-
-        System.out.println("THerer");
 
         invoiceRepo.insert(invoiceDao);
     }
